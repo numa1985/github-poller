@@ -5,5 +5,4 @@ COPY poller.py /app/poller.py
 
 RUN pip install requests
 
-CMD ["python", "/app/poller.py"]
-
+CMD  python poller.py

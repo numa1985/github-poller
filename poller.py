@@ -4,7 +4,7 @@ import json
 
 GITHUB_API_URL = os.environ.get("GITHUB_API_URL", "https://api.github.com/repos/{owner}/{repo}/commits")
 GITHUB_TOKEN = os.environ.get("GITHUB_TOKEN")
-LAST_COMMIT_FILE = os.environ.get("LAST_COMMIT_FILE", "/app/last_commit.txt")
+LAST_COMMIT_FILE = os.environ.get("LAST_COMMIT_FILE", "/data/last_commit.txt")
 ARGO_EVENT_SOURCE_URL = os.environ.get("ARGO_EVENT_SOURCE_URL", "http://argo-event-source-service.default.svc.cluster.local:12000/webhook")
 
 def get_latest_commit():
